@@ -1,0 +1,5 @@
+package com.hk.bookDemo.model;
+
+public class BookMapper {
+
+}

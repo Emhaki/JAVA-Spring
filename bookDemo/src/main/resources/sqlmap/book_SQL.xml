@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 인터페이스에 있는 BookMapper랑 일치시켜야 함 -->
+<mapper namespace="com.hk.bookDemo.model.BookMapper"> 
+  <!-- 여기에 SQL 구문 -->
+  	<insert id="insert" parameterType="BookVO" useGeneratedKeys="true" keyProperty="book_id">  
+	    <![CDATA[
+	    insert into book
+	    (title, category, price) 
+	    values
+	    (#{title}, #{category}, #{price})
+	    ]]>
+	</insert>   
+	
+	<select id="selectAll" resultType="BookVO">  
+	    <![CDATA[
+	    select * from book
+	    ]]>
+	</select>   
+</mapper>

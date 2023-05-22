@@ -1,0 +1,5 @@
+package com.hk.bookDemo.service;
+
+public class BookService {
+
+}

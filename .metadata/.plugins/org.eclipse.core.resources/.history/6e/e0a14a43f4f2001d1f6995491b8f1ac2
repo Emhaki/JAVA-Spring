@@ -1,0 +1,5 @@
+package com.hk.bookDemo.vo;
+
+public class BookVO {
+
+}

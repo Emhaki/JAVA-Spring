@@ -1,0 +1,10 @@
+package com.hk.bookDemoJPANew.entity;
+
+public class Book {
+	long book_id;
+	String title;
+	String category;
+	int price;
+	Date insert_date;
+	
+}

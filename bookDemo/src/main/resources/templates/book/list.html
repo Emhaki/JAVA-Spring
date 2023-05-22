@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+   <tr>
+      <td>아이디</td>
+      <td>제목</td>
+   </tr>
+   
+   <tr th:each="book : ${list}">
+      <td th:text="${book.book_id}">id</td>
+      <td th:text="${book.title}">title</td>
+   </tr>
+</table>
+
+
+</body>
+</html>

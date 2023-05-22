@@ -1,0 +1,10 @@
+package com.hk.bookDemoJPANew.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class bookService {
+	
+	// JPA Repository로 생성 사용
+	// interface로 만들어두면 알아서 구현객체를 만듦
+}	

@@ -1,0 +1,36 @@
+package com.hk.bookDemoJPANew.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hk.bookDemoJPANew.entity.Book;
+import com.hk.bookDemoJPANew.repository.BookRepository;
+
+import jakarta.transaction.Transactional;
+
+@Service
+public class bookService {
+	
+	// JPA Repository로 생성 사용
+	// interface로 만들어두면 알아서 구현객체를 만듦
+	
+	@Autowired
+	BookRepository bookRepository;
+	
+	public long create(Book book) {
+		long book_id = bookRepository.save(book).getBook_id();
+		
+		return book_id;
+	}
+
+	public List<book> getBooklist() {
+		// TODO Auto-generated method stub
+
+		String book_list = bookRepository.findAll(book);
+		
+		return null;
+	}
+	
+}	

@@ -1,0 +1,25 @@
+package com.hk.bookDemoJPANew.entity;
+
+import java.util.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Book {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	long book_id;
+	
+	String title;
+	String category;
+	int price;
+	Date insert_date;
+	
+}

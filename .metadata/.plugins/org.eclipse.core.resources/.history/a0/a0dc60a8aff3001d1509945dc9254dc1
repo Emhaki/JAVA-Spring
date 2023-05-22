@@ -1,0 +1,22 @@
+package com.hk.bookDemoJPANew.entity;
+
+import java.util.Date;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Book {
+	
+	long book_id;
+	String title;
+	String category;
+	int price;
+	Date insert_date;
+	
+}

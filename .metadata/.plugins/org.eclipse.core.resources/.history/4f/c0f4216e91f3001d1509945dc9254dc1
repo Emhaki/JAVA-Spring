@@ -1,0 +1,27 @@
+package com.hk.bookDemo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hk.bookDemo.vo.BookVO;
+
+@Service
+public class BookService {
+	
+	@Autowired
+	BookMapper bookMapper;
+	
+	public long create(BookVO bookVO) {
+		// TODO Auto-generated method stub
+		// DAO/Repository/Mapper에 사용자에게 받은 bookVO를
+		// 실제 insert 하도록 요청
+		// 성공이면 book_id 
+		// 실패면 0
+		
+		// Mapper 호출, interface
+		
+		
+		return 0;
+	}
+
+}
