@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author HKEDU
- *
- */
-module bookDemoTest {
-}

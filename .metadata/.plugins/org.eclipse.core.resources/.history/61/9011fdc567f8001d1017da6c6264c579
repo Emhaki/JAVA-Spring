@@ -1,0 +1,24 @@
+# 서버셋팅
+server.port=80
+
+# LOG설정
+logging.level.root=INFO
+logging.level.org.springframework=INFO
+logging.level.org.hibernate=DEBUG
+
+# DB셋팅 (datasource)
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://localhost:3306/STUDY
+spring.datasource.username=STUDY
+spring.datasource.password=STUDY
+
+# JPA 셋팅
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MariaDBDialect
+spring.jpa.hibernate.ddl-auto=update
+# update
+# create
+# create-drop
+# validate
+# ddl -> Data Definition Language (테이블 생성, 수정, 삭제)

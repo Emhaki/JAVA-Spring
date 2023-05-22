@@ -1497,3 +1497,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration BookDemo1Applicatio
 2023-05-22 13:34:22,767 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-05-22 13:34:22,775 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
 2023-05-22 13:34:22,781 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\HKEDU\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE\bookDemo\src\test\resources
+2023-05-22 14:20:58,658 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
